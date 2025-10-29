@@ -1,0 +1,67 @@
+# === Build / IDE ===
+/target/
+*.class
+*.war
+*.ear
+*.jar
+
+# maven wrapper
+/.mvn/
+mvnw*
+mvnw.cmd
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+out/
+
+# VS Code
+.vscode/
+
+# === Logs & reports & temp ===
+*.log
+logs/
+reports/
+test-output/
+surefire-reports/
+failsafe-reports/
+extent-output/
+downloads/
+
+# TestNG / JUnit artifacts
+test-output/
+*.trx
+
+# === OS files ===
+.DS_Store
+Thumbs.db
+
+# === Secrets / environment ===
+.env
+.env.local
+*.properties
+secrets.properties
+credentials.properties
+
+# If you keep some config example in repo, don't ignore it:
+!src/test/resources/config.example.properties
+
+# === Driver binaries / executables ===
+chromedriver
+chromedriver.exe
+geckodriver
+geckodriver.exe
+
+# === IDE / tool specific ===
+# Maven dependency cache (don't put local repo in project, but just in case)
+repository/
+
+# === Misc ===
+*.tmp
+*.swp
