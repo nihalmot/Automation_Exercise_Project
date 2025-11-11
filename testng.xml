@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="AutomationExerciseSuite" verbose="1" parallel="false">
+    <test name="AutomationExerciseTests">
+        <!-- This automatically runs all test classes inside 'testcases' package -->
+        <packages>
+            <package name="testcases" />
+        </packages>
+    </test>
+</suite>

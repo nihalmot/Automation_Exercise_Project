@@ -77,6 +77,11 @@ public class BaseTest {
 		options.addArguments("--disable-notifications");
 		options.addArguments("--disable-infobars");
 		options.addArguments("--disable-popup-blocking");
+		
+		// Add this line for CI (headless mode)
+		options.addArguments("--headless=new", "--no-sandbox", "--disable-dev-shm-usage");
+
+		
 		options.setExperimentalOption("prefs", new java.util.HashMap<String, Object>() {
 			{
 				put("credentials_enable_service", false);
