@@ -46,7 +46,7 @@ jobs:
 
       # Step 6: Run Maven tests (TestNG)
       - name: Run TestNG Tests
-        run: mvn clean test -Dsurefire.suiteXmlFiles=src/test/java/testcases
+        run: mvn clean test -Dsurefire.suiteXmlFiles=testng.xml
 
       # Step 7: Archive test reports (ExtentReports / surefire-reports)
       - name: Upload test reports
